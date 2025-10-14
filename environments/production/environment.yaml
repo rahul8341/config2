@@ -79,7 +79,7 @@ app:
   # instance or by providing the name and type of the service instance. The
   # preferred way is to provide the crn value as the service instance names
   # can change and might not be unique.
-  #services:
-  #- crn: "crn:v1:bluemix:public:dashdb-for-transactions:us-east:a/123:456::"
-  #- name: "my Db2 instance"
-  #  type: dashdb-for-transactions
+  services:
+    - amazonCloudWatch:
+       logGroup: EASeJ
+       arn: arn:aws:iam::592157396942:role/IBM_EASeJ_Service_20251014-0723-2300-40bd-d5ad7c120a52
