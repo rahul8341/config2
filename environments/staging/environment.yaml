@@ -10,7 +10,7 @@ app:
   services:
     - amazonCloudWatch:
       logGroup: EASeJ
-      arn: arn:aws:iam::592157396942:role/IBM_EASeJ_Service_20251009-0614-0147-70b4-e30235a9c235
+      arn: 
   # Set the Maven coordinates of the Maven artifact to deploy for the 
   # "Deploy, and run" scenario.
   #maven:
