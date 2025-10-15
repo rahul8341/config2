@@ -7,7 +7,10 @@ app:
   # scenario. If the value is set to an empty string ("") the application
   # is not deployed.
   version: "ce2916f6-4c59-4e31-9172-4432af113e78"
-  
+  services:
+    - amazonCloudWatch:
+      logGroup: EASeJ
+      arn: arn:aws:iam::592157396942:role/IBM_EASeJ_Service_20251009-0614-0147-70b4-e30235a9c235
   # Set the Maven coordinates of the Maven artifact to deploy for the 
   # "Deploy, and run" scenario.
   #maven:
@@ -77,9 +80,5 @@ app:
   # Set a list of service bindings for the application. The bindings can be
   # provided in two ways: by providing the full crn value of the service 
   # instance or by providing the name and type of the service instance. The
-  # preferred way is to provide the crn value as the service instance names
+  # preferred way is to provide the crn value as the service instance name
   # can change and might not be unique.
-  services:
-    - amazonCloudWatch:
-      logGroup: EASeJ
-      arn: arn:aws:iam::592157396942:role/IBM_EASeJ_Service_20251009-0614-0147-70b4-e30235a9c235
