@@ -10,7 +10,8 @@ app:
   services:
     - amazonCloudWatch:
       logGroup: EASeJ
-      arn: 
+      arn:
+    - awsEndpointService: com.amazonaws.vpce.us-east-1.vpce-svc-038584aa8a44934a3
   # Set the Maven coordinates of the Maven artifact to deploy for the 
   # "Deploy, and run" scenario.
   #maven:
